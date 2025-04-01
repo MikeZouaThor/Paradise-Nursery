@@ -1,6 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './App';
+import ShoppingList from './ProductList';
 import React from 'react';
+import ReactDOM from "react-dom/client";
+import { Route,Routes,BrowserRouter,Link,Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
         <p className='text'>
           Paradise Nursery strives to provide affortable plants to everyone. These plants are well nourished and cared for at our local sanctuary in Minnesota.
         </p>
-        <button className="startingButton" id = "startButton" onclick="">Getting Started</button>
+        <Link to="/shoppingList">
+          <button className="startingButton" id = "startButton" onclick="">Getting Started</button>
+        </Link>
       </header>
     </div>
 
